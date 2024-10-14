@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle` /*Utilizando create globalStyle do styled-components*/
+export const GlobalStyle = createGlobalStyle` 
     :root{
-        --dark-blue: #010B40; /*Criando variavel de estilo global*/
+        --dark-blue: #010B40;
         --secundary-blue: #021E73;
         --mediun-blue: #056CF2;
         --alternative-blue1: #0578A6;
@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle` /*Utilizando create globalStyle do
 
         }
     body{
-        background-color: var(--dark-blue); /*Utilizando a variavel global*/
+        background-color: var(--dark-blue); 
         
     }
 html {
@@ -18,12 +18,6 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
 
 body {
   margin: 0;
