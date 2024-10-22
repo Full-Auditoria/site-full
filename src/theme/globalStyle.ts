@@ -6,28 +6,31 @@ export const GlobalStyle = createGlobalStyle`
         --secundary-blue: #021E73;
         --mediun-blue: #056CF2;
         --alternative-blue1: #0578A6;
-        --alternative-blue2: #05F2F2;
-
+        --alternative-blue2: #05F2F2;  
         }
-    body{
-        background-color: var(--dark-blue); 
-        
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+    background-color: var(--dark-blue);
+    font-family: "Inter", sans-serif;
+  }
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-
 body {
   margin: 0;
 }
 
-
 main {
   display: block;
 }
-
 
 h1 {
   font-size: 2em;
@@ -39,7 +42,6 @@ hr {
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
-
 
 pre {
   font-family: monospace, monospace; /* 1 */
@@ -198,4 +200,6 @@ template {
 [hidden] {
   display: none;
 }
+
 `
+
