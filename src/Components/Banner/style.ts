@@ -7,44 +7,27 @@ export const ContainerImgBanner = styled.div`
     left: 60px;
     translate: 60px;
 
-    img{
-        width: 900px;
-
-    }
 `
 
 export const ContainerBanner = styled.div`
+    
     div{
-        align-items: center;
         width: 100%;
+        height: 600px;
         max-width: 1200px;
-        height: 100vh;
-        top: 266px;
         color: white;
         display: flex;
         flex-direction: column;
         align-items: center; 
         justify-content: center;
         text-align: center;
-        margin: 0 auto;
-      
-        div{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            height: 50vh;
-        }
+        margin: 0 auto; 
         
-        p{
-            width: 100%;
-
-        }
     }
+
     img{
         width: 245px;
         height: 222px;
-        top: 266px;
-        left: 600px;
     }
 
     h2{
@@ -62,5 +45,14 @@ export const ContainerBanner = styled.div`
         font-size: 16px;
     }
 
+    Button{
+        width: 464px;
+        height: 64px;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 28px;
+        justify-content: center; //Alinhamento horizontal
+        align-items: center; //Alinhamento vertical
+    }
 
 `

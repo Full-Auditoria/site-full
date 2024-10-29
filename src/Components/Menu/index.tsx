@@ -1,10 +1,10 @@
 import React from 'react';
-import {HeaderMenu} from './style.ts';
+import {Banner} from './style.ts';
 import logo from "./../../assets/logo.png"
 
 const Menu = () => {
     return (
-        <HeaderMenu>
+        <Banner>
             <div>
                 <img src= {logo} alt='logo'></img>
                 <nav className='navbar'>
@@ -12,10 +12,10 @@ const Menu = () => {
                     <a href="/">Quem Somos</a>
                     <a href="/">Nossos Serviços</a>
                     <a href="/">Trabalhe conosco</a>
-                    <a href="/">Entre em contato</a> 
+                    <a href="/" className='button'>Entre em Contato</a>
                 </nav>
             </div>
-        </HeaderMenu>
+        </Banner>
     );
 }
 

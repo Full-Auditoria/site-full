@@ -3,7 +3,6 @@ import Menu from './Components/Menu'
 import Banner from './Components/Banner';
 import Home from './Pages/home';
 
-
 function App() {
   return (
     <>
@@ -11,6 +10,7 @@ function App() {
         <Menu />
         <Banner />
         <Home />
+        
       </div>
     </>
   )
