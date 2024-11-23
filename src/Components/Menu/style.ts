@@ -1,70 +1,92 @@
 import styled from "styled-components";
 
-export const Banner = styled.div` 
-    
-    div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-        position: fixed;
-        height: 50px;
-        width: 100%;
-        padding: 35px 10%;
-        background: transparent;
-        margin-left: -4px;
-    }
+export const Banner = styled.div<{ menuOpen: boolean }>`
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    padding: 20px 10%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    width: 50px;
+  }
+
+  .navbar {
+    display: flex;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     a {
-        text-decoration: none;
-        transition: ease-in-out 250ms;
-    }
-    
-    img {
-        width:50px;
-        position: relative;
+      text-decoration: none;
+      font-size: 16px;
+      color: #fff;
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color:  var(--mediun-blue);
+      }
     }
 
-    .button{
-        padding: 10px;
+    .button {
+      padding: 10px 15px;
+      background-color: #fff;
+      color: var(--main-blue);
+      font-size: 14px;
+      border-radius: 10px;
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
         background-color: var(--mediun-blue);
-        width: 84px;
-        height: 30px;
-        font-family: var(--font-family);
-        font-size: 12px;
-        border-radius: 10px;
-        transition: ease-in-out 250ms;
-
-    }
-
-    .button:hover{
-        background-color: #fff;
-        color: var(--mediun-blue);
-        font-weight: 700;
-
-    }
-    
-    .navbar a{
-        position: relative;
-        font-size: 16px;
         color: #fff;
-        font-weight: 700;
-        margin-left: 26px;
+      }
+    }
+  }
 
+  .mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 2px;
+      transition: all 0.3s ease-in-out;
     }
 
-    .navbar a:hover{
-        color: var(--mediun-blue);
-    
+    &:hover span {
+      background-color: var(--mediun-blue);
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .navbar {
+      display: ${({ menuOpen }) => (menuOpen ? "flex" : "none")};
+      position: absolute;
+      top: 100%;
+      right: 0%;
+      flex-direction: column;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .mobile-menu-icon{
-        display: none;
+    .mobile-menu-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
     }
-
-    .menu-mobile{
-        display: none;
-        
-    }
-
-`
+  }
+`;

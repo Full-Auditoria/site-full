@@ -1,58 +1,52 @@
 import styled from "styled-components";
-import backgroundImg from './../../assets/background-img.png';
+import img from "../../assets/background-img.png";
 
-export const ContainerImgBanner = styled.div`
-    position: absolute;
-    z-index: -999;
-    left: 60px;
-    translate: 60px;
+export const Container = styled.div`
+  width: 100%;
+  height: 100vh; 
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+  background-image: url(${img});
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
 
-`
+  > div {
+    width: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
 
-export const ContainerBanner = styled.div`
-    
-    div{
-        width: 100%;
-        height: 600px;
-        max-width: 1200px;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto; 
-        
+    > img {
+      object-fit: cover;
+      width: 300px;
     }
+  }
 
-    img{
-        width: 245px;
-        height: 222px;
+  .containerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 30%;
+
+    h1 {
+      width: 100%;
     }
-
-    h2{
-        font-size: 38px;
-        margin: 0 10px;
+    p {
+      font-weight: bold;
     }
+  }
 
-    .resultados{
-        text-align: justify;
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-
-    .solucao{
-        font-size: 16px;
-    }
-
-    Button{
-        width: 464px;
-        height: 64px;
-        border-radius: 30px;
-        font-weight: 700;
-        font-size: 28px;
-        justify-content: center; //Alinhamento horizontal
-        align-items: center; //Alinhamento vertical
-    }
-
-`
+  @media (max-width: 1000px) {
+    background-image: none;
+  }
+`;
