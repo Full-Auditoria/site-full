@@ -10,18 +10,18 @@ export const ModalOverlay = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5); /* Escurece o fundo */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 999;
 `;
 
 export const ModalWrapper = styled.div`
   position: fixed;
-  bottom: 20px; /* Referência do bottom */
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%; /* Proporção ajustada */
+  width: 90%; 
   max-width: 400px;
-  height: 60%; /* Altura maior que largura */
+  height: 60%; 
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -38,7 +38,7 @@ export const ModalHeader = styled.h3`
 
 export const ModalContent = styled.div`
   flex: 1;
-  overflow-y: auto; /* Scroll para o conteúdo */
+  overflow-y: auto; 
   padding: 16px;
   font-size: 14px;
   line-height: 1.5;
