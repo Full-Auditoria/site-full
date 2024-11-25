@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "./style";
 import logo from "../../assets/logo.png";
 import Button from "../Button";

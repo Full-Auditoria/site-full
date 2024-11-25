@@ -1,4 +1,3 @@
-import React from 'react';
 import { ContainerButton } from './style'
 
 interface ButtonProps {
@@ -10,7 +9,7 @@ interface ButtonProps {
 const Button = ({ text, url }: ButtonProps) => {
     const handleClick = () => {
         if (url) {
-            window.location.href = url; // Redireciona para a URL completa
+            window.location.href = url; 
         }
     };
 
