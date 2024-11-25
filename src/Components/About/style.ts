@@ -15,6 +15,9 @@ export const Container = styled.div`
     p{
         margin: 10px 0;
     }
+    @media (max-width: 768px) {
+        height: auto;
+    }
     .content{
         width: 100%;
         max-width: 1200px;
@@ -27,6 +30,7 @@ export const Container = styled.div`
         flex-wrap: wrap;
         @media (max-width: 1000px) {
             height: auto;
+            padding: 20px 0;
         }
         >div{
             min-width: 300px;
@@ -34,6 +38,7 @@ export const Container = styled.div`
             @media (max-width: 1000px) {
             width: 100%;
         }
+        
         }
 
         @media (max-width:768px) {
@@ -41,6 +46,10 @@ export const Container = styled.div`
             div{
                 width: 100%;
             }
+            p{
+            padding: 0 10px;
+            font-size: 14px;
+        }
         }
     }
     .containerLeft {
@@ -54,6 +63,11 @@ export const Container = styled.div`
         background-repeat: no-repeat; 
         background-position: center; 
         height: 100%;
+
+        @media (max-width:768px) {
+            justify-content: center;
+            background-image: none;
+        }
     }
     
 }

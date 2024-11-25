@@ -16,6 +16,9 @@ export const Container = styled.div`
         flex-direction: column;
         justify-content: space-evenly;
         gap: 10px;
+        @media (max-width: 768px) {
+            align-items: center;
+        }
         input, textarea, select{
             width: 100%;
             min-width: 300px;

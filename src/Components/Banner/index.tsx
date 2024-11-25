@@ -17,7 +17,7 @@ export default function Banner() {
         </div>
         <p>Full 2.0 a solução de incremento de receitas para seu município.</p>
       </div>
-      <Button text={"Escritório Virtual"} />
+      <Button text={"Escritório Virtual"} url={"https://fullauditoria20.com/"}/>
     </Container>
   );
 }

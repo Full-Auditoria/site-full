@@ -9,6 +9,9 @@ export const Container = styled.div`
     color: #fff;
     height: 50vh;
     color: #056CF2;
+    @media (max-width: 768px) {
+        background-color: transparent;
+    }
     h1{
         color: #fff;
         font-weight: 300;
@@ -26,14 +29,15 @@ export const Container = styled.div`
         height: 100%;
         padding: 20px;
         flex-wrap: wrap;
-        @media (max-width: 1000px) {
-            height: auto;
-        }
+           
         >div{
             min-width: 300px;
             width: 50%;
             @media (max-width: 1000px) {
             width: 100%;
+            h1, p{
+                width: 100%;
+            }
         }
         }
 
@@ -77,6 +81,16 @@ export const Container = styled.div`
         height: 100px;
         gap: 20px;
     }
+    @media (max-width:768px) {
+            width: 100%;
+            >div{
+                width: 100%;
+                p, h1{
+                width: 100%;
+            }
+            }
+            
+        }
 }
 .containerRight{
         line-height: 20px;
@@ -91,6 +105,12 @@ export const Container = styled.div`
             background-position: center; 
             height: 100%;
             min-height: 400px;
+            @media (max-width: 768px) {
+                background-image: none;
+            }
+            @media (max-width: 520px) {
+               display: none;
+            }
         }
     }
 `

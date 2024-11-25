@@ -21,6 +21,11 @@ background-color: rgba(241, 241, 241);
     p{
         margin: 10px 0;
     }
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        padding: 5px;
+    }
 }
 .containerRight{
     >div{
