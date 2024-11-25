@@ -36,8 +36,11 @@ export const ModalContent = styled.div`
   img{
     height: 100%;
     max-height: 400px;
+    @media (max-width: 768px) {
+    display: none;
   }
-
+  }
+  
   p {
     font-size: 1.3rem;
     line-height: 1.9;
