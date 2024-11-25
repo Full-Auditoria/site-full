@@ -2,19 +2,20 @@ import styled from "styled-components";
 import img from "../../assets/background-img.png";
 
 export const Container = styled.div`
-  width: 100%;
+   width: 100%;
   height: 100vh;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center; 
   background-image: url(${img});
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: #fff;
-
+  margin-top: 70px;
+  overflow: hidden; 
   > div {
     width: 500px;
     box-sizing: border-box;
@@ -22,7 +23,6 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 999;
 
     @media (max-width: 768px) {
         width: 100%;
@@ -46,6 +46,12 @@ export const Container = styled.div`
       }
     }
   }
+  @media (max-width: 768px) {
+    .subtitle{
+    max-width: 250px;
+  }
+  }
+
 
   .containerText {
     display: flex;
@@ -78,6 +84,10 @@ export const Container = styled.div`
       @media (max-width: 420px) {
         font-size: 1rem;
       }
+    }
+
+    .subtitle{
+      font-size: 0.9rem;
     }
 
     p {

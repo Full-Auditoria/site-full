@@ -14,7 +14,7 @@ export default function Banner() {
           <p>Mais de 200 milhões recuperados. </p>
           <p>R$ 500.000.000,00 em contratos.</p>
         </div>
-        <p>Full 2.0 a solução de incremento de receitas para seu município.</p>
+        <p className="subtitle">Full 2.0 a solução de incremento de receitas para seu município.</p>
       </div>
       <Button text={"Escritório Virtual"} url={"https://fullauditoria20.com/"}/>
     </Container>

@@ -55,14 +55,33 @@ export const Container = styled.div`
     .containerLeft {
         height: 100%;
     > div {
-        background-image: url(${logo});
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        background-size: 350px; 
-        background-repeat: no-repeat; 
-        background-position: center; 
-        height: 100%;
+        position: relative;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${logo});
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4; 
+    z-index: -1;
+    @media (max-width: 1000px) {
+        background-image: none;
+    }
+  } 
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 0; 
+    }
 
         @media (max-width:768px) {
             justify-content: center;
@@ -70,7 +89,7 @@ export const Container = styled.div`
         }
     }
     
-}
+
 .containerRight{
         line-height: 20px;
         text-align: justify;

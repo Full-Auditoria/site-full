@@ -104,5 +104,5 @@ Implementamos normas reconhecidas, como ISO 27001 e ISO/IEC 27701, que asseguram
 **Plano de Risco de Vazamento:** Garantimos ações preventivas contra incidentes de segurança.
 
 ## Atualizações e Contato
-Esta Política pode ser alterada a qualquer momento. Revise-a regularmente para informações atualizadas. Em caso de dúvidas ou solicitações, contate nosso Encarregado de Proteção de Dados (DPO) pelo e-mail: fullcgm.auditoria@gmail.com.
+Esta Política pode ser alterada a qualquer momento. Revise-a regularmente para informações atualizadas. Em caso de dúvidas ou solicitações, contate nosso Encarregado de Proteção de Dados (DPO) pelo e-mail: fullcgm.auditoria@gmail.com.br
 `;

@@ -23,6 +23,7 @@ export const Banner = styled.div<{ menuOpen: boolean }>`
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
     a {
       text-decoration: none;
@@ -81,6 +82,8 @@ export const Banner = styled.div<{ menuOpen: boolean }>`
       padding: 15px 20px;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      text-align: left;
+      align-items: flex-start;
     }
 
     .mobile-menu-icon {

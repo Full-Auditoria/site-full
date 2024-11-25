@@ -32,10 +32,10 @@ export default function Footer() {
               </li>
             </ul>
             <div className="socialMedia">
-              <a href="https://www.linkedin.com/company/full-2-0-auditorias-inteligentes">
+              <a href="https://www.linkedin.com/company/full-2-0-auditorias-inteligentes" target="blank">
                 <img src={linkedin} alt="" />
               </a>
-              <a href="https://www.instagram.com/full_auditoriasinteligentes">
+              <a href="https://www.instagram.com/full_auditoriasinteligentes" target="blank">
                 <img src={insta} alt="" />
               </a>
             </div>

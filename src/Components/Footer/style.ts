@@ -105,6 +105,7 @@ export const Container = styled.div`
             background-position: center; 
             height: 100%;
             min-height: 400px;
+            opacity: 0.5;
             @media (max-width: 768px) {
                 background-image: none;
             }

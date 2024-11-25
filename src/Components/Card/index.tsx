@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Service } from "../Mock";
 import { Container } from "./style";
 import { ServiceModal } from "../ServiceModal";
