@@ -16,7 +16,6 @@ export const GlobalStyle = createGlobalStyle`
   
 }
 body {
-    background-color: var(--dark-blue);
     font-family: "Inter", sans-serif;
   }
 
@@ -202,5 +201,4 @@ template {
   display: none;
 }
 
-`
-
+`;

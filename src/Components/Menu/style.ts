@@ -15,6 +15,7 @@ export const Banner = styled.div<{ menuOpen: boolean }>`
 
   img {
     width: 50px;
+    object-fit: cover;
   }
 
   .navbar {
@@ -23,7 +24,6 @@ export const Banner = styled.div<{ menuOpen: boolean }>`
     display: flex;
     align-items: center;
     justify-content: center;
-    
 
     a {
       text-decoration: none;
@@ -33,7 +33,7 @@ export const Banner = styled.div<{ menuOpen: boolean }>`
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        color:  var(--mediun-blue);
+        color: var(--mediun-blue);
       }
     }
 
@@ -87,9 +87,9 @@ export const Banner = styled.div<{ menuOpen: boolean }>`
     }
 
     .mobile-menu-icon {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
     }
   }
 `;

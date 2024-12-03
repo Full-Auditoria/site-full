@@ -12,11 +12,11 @@ export default function Banner() {
         <h1>Auditorias Inteligentes</h1>
         <div>
           <p>Mais de 200 milhões recuperados. </p>
-          <p>R$ 500.000.000,00 em contratos.</p>
+          <p>500.000.000,00 em contratos.</p>
         </div>
         <p className="subtitle">Full 2.0 a solução de incremento de receitas para seu município.</p>
       </div>
-      <Button text={"Escritório Virtual"} url={"https://fullauditoria20.com/"}/>
+      <Button text={"Escritório Virtual"} url={"https://fullauditoria20.com/"} />
     </Container>
   );
 }

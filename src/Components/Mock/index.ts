@@ -1,58 +1,55 @@
-
-export interface Service{
-    title: string,
-    description: string,
-    img: string
+export interface Service {
+  title: string;
+  description: string;
+  img: string;
 }
 
-
-
 export const servicesElements: Service[] = [
-    {
-        title: "RECUPERAÇÃODO IRPJ",
-        description: "Auditoria e recuperação sobre a retenção do FPM dos últimos cinco anos, quando aplicável",
-        img: ""
-
-    },
-    {
-        title: "RECUPERAÇÃO DA DIVIDA ATIVA",
-        description: "Análise auditoria e recuperação administrativa da Dívida Ativa.",
-        img: ""
-
-    },
-    {
-        title: "AUDITORIA E RECUPERAÇÃO VAF",
-        description: "Através de nosso sistema online e  ferramentas de BI (Business Inteligence), realizamos a auditoria sobre inconsistências nas declarações, identificando divergências, e aferindo o incremento obtido no valor adicionado corrigido.",
-        img: ""
-
-    },
-    {
-        title: "REVISÃO DE CRÉDITOS TRIBUTÁRIOS",
-        description: "Revisão de créditos tributários, incluindo o levantamento, processamento do ISSQN de instituições financeiras, operadoras de cartão de crédito/débito, casas lotéricas, Bancos, ICMS, construtoras e grandes prestadores de serviço, além da revisão de créditos fiscais dos últimos cinco anos, quando aplicável; ",
-        img: ""
-
-    },
-    {
-        title: "INOVAÇÃO EM TECNOLOGIA DE SISTEMAS",
-        description: "Além da criação de sistemas específicos para atuação na área, realização de cursos de capacitação in loco para os servidores municipais, em todas as áreas da Administração Pública no uso dessas novas tecnologias.",
-        img: ""
-
-    },
-    {
-        title: "RECADASTRAMENTO IMOBILIÁRIO",
-        description: "O recadastramento imobiliário no Brasil atualiza dados sobre imóveis para corrigir informações e ampliar a arrecadação de tributos. Realizado pelos municípios, também apoia a regularização e o planejamento urbano. É essencial para melhorar políticas públicas e gestão territorial.",
-        img: ""
-
-    }
-]
+  {
+    title: "RECUPERAÇÃO DO IRPJ",
+    description:
+      "Auditoria e recuperação sobre a retenção do FPM dos últimos cinco anos, quando aplicável",
+    img: "",
+  },
+  {
+    title: "RECUPERAÇÃO DA DIVIDA ATIVA",
+    description:
+      "Análise auditoria e recuperação administrativa da Dívida Ativa.",
+    img: "",
+  },
+  {
+    title: "AUDITORIA E RECUPERAÇÃO VAF",
+    description:
+      "Através de nosso sistema online e  ferramentas de BI (Business Inteligence), realizamos a auditoria sobre inconsistências nas declarações, identificando divergências, e aferindo o incremento obtido no valor adicionado corrigido.",
+    img: "",
+  },
+  {
+    title: "REVISÃO DE CRÉDITOS TRIBUTÁRIOS",
+    description:
+      "Revisão de créditos tributários, incluindo o levantamento, processamento do ISSQN de instituições financeiras, operadoras de cartão de crédito/débito, casas lotéricas, Bancos, ICMS, construtoras e grandes prestadores de serviço, além da revisão de créditos fiscais dos últimos cinco anos, quando aplicável.",
+    img: "",
+  },
+  {
+    title: "INOVAÇÃO EM TECNOLOGIA DE SISTEMAS",
+    description:
+      "Além da criação de sistemas específicos para atuação na área, realização de cursos de capacitação in loco para os servidores municipais, em todas as áreas da Administração Pública no uso dessas novas tecnologias.",
+    img: "",
+  },
+  {
+    title: "RECADASTRAMENTO IMOBILIÁRIO",
+    description:
+      "O recadastramento imobiliário no Brasil atualiza dados sobre imóveis para corrigir informações e ampliar a arrecadação de tributos. Realizado pelos municípios, também apoia a regularização e o planejamento urbano. É essencial para melhorar políticas públicas e gestão territorial.",
+    img: "",
+  },
+];
 
 export const specialists = [
-    "Advogado",
-    "Contador",
-    "Gestão",
-    "Tecnologia da Informação",
-    "Consultor de Vendas"
-]
+  "Advogado",
+  "Contador",
+  "Gestão",
+  "Tecnologia da Informação",
+  "Consultor de Vendas",
+];
 
 export const PrivacyPolicy = `
 Ao enviar este formulário, concordo que as informações inseridas poderão ser utilizadas para entrar em contato comigo. Para conhecer e exercer seus direitos, em particular para retirar seu consentimento para o uso dos dados coletados por este formulário, favor consultar nossa Política de Proteção de Dados Pessoais.
@@ -104,5 +101,5 @@ Implementamos normas reconhecidas, como ISO 27001 e ISO/IEC 27701, que asseguram
 **Plano de Risco de Vazamento:** Garantimos ações preventivas contra incidentes de segurança.
 
 ## Atualizações e Contato
-Esta Política pode ser alterada a qualquer momento. Revise-a regularmente para informações atualizadas. Em caso de dúvidas ou solicitações, contate nosso Encarregado de Proteção de Dados (DPO) pelo e-mail: fullcgm.auditoria@gmail.com.br
+Esta Política pode ser alterada a qualquer momento. Revise-a regularmente para informações atualizadas. Em caso de dúvidas ou solicitações, contate nosso Encarregado de Proteção de Dados (DPO) pelo e-mail: administrativo@fullauditoria20.com
 `;
