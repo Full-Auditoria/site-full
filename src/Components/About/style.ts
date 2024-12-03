@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logo from "../../assets/logofullDark.png";
+import logo from "../../assets/logofullDarkFillLarge.png";
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -10,9 +10,11 @@ export const Container = styled.div`
   height: 50vh;
   h1 {
     color: #fff;
+    font-weight: 100;
   }
   p {
     margin: 10px 0;
+    font-size: 1.1rem;
   }
   @media (max-width: 768px) {
     height: auto;
@@ -23,9 +25,21 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: url(${logo});
+    background-size: contain;
+    background-position: center;
+    height: 100%;
     margin: 0 auto;
     padding: 20px;
     flex-wrap: wrap;
+    font-weight: 100;
+    background-attachment: scroll;
+    @media (max-width: 1000px) {
+      background-image: none;
+    }
+    .containerLeft {
+      width: 40%;
+    }
     @media (max-width: 1000px) {
       height: auto;
       padding: 20px 0;
@@ -39,7 +53,6 @@ export const Container = styled.div`
     }
 
     @media (max-width: 768px) {
-      justify-content: center;
       div {
         width: 100%;
       }
@@ -56,7 +69,7 @@ export const Container = styled.div`
       width: 100%;
       height: 100%;
 
-      &::before {
+      /* &::before {
         content: "";
         position: absolute;
         top: 0;
@@ -72,17 +85,12 @@ export const Container = styled.div`
         @media (max-width: 1000px) {
           background-image: none;
         }
-      }
+      } */
 
       display: flex;
       align-items: flex-start;
       flex-direction: column;
       z-index: 0;
-    }
-
-    @media (max-width: 768px) {
-      justify-content: center;
-      background-image: none;
     }
   }
 

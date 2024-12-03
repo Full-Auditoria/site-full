@@ -10,10 +10,12 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 20px;
   border-radius: 20px;
   box-shadow: 6px 7px 5px -4px rgba(0, 0, 0, 0.49);
+  @media (max-width: 768px) {
+    position: sticky;
+    top: 20px;
+  }
   p {
     font-size: 14px;
     text-align: center;

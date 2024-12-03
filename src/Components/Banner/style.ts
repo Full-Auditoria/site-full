@@ -5,6 +5,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   min-height: 100vh;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url(${img});
@@ -17,8 +18,7 @@ export const Container = styled.div`
   background-attachment: fixed;
 
   @media (max-width: 768px) {
-    background-size: contain; /* Em telas menores, mostra a imagem inteira */
-    background-position: center;
+    background-image: none;
   }
 
   > div {
@@ -37,6 +37,8 @@ export const Container = styled.div`
     > img {
       object-fit: cover;
       width: 300px;
+      transition: transform 0.3s ease, filter 0.3s ease; /* Suavidade nas interações */
+      animation: pulse 3s infinite; /* Animação contínua */
 
       @media (max-width: 768px) {
         width: 200px;
@@ -49,9 +51,13 @@ export const Container = styled.div`
       @media (max-width: 420px) {
         width: 100px;
       }
+
+      &:hover {
+        transform: scale(1.05); /* Leve aumento ao passar o mouse */
+        filter: brightness(1.2) blur(2px); /* Realça e aplica desfoque */
+      }
     }
   }
-
   .containerText {
     display: flex;
     flex-direction: column;
@@ -70,7 +76,7 @@ export const Container = styled.div`
 
     h1 {
       width: 100%;
-      font-size: 2rem;
+      font-size: 2.4rem;
 
       @media (max-width: 768px) {
         font-size: 1.5rem;
@@ -91,7 +97,7 @@ export const Container = styled.div`
 
     p {
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 1.5rem;
 
       @media (max-width: 768px) {
         font-size: 0.9rem;
@@ -116,5 +122,23 @@ export const Container = styled.div`
   @media (max-width: 420px) {
     padding: 20px;
     flex-direction: column;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.03); /* Leve ampliação no meio do ciclo */
+    }
+  }
+  button {
+    width: 460px;
+    height: 50px;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    box-shadow: 2px 4px 5px -3px rgba(0, 0, 0, 0.75);
   }
 `;

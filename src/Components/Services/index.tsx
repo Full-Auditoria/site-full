@@ -16,8 +16,8 @@ export default function Services() {
         </div>
         <div className="containerRight">
           <div>
-            {servicesElements.map((item: Service) => (
-              <Card service={item}/>
+            {servicesElements.map((item: Service, index) => (
+              <Card key={index} service={item} />
             ))}
           </div>
         </div>

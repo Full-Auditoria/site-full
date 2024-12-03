@@ -33,8 +33,11 @@ main {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   margin: 0.67em 0;
+}
+p{
+  font-size: 1.2rem;
 }
 
 hr {
