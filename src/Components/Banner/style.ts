@@ -137,8 +137,11 @@ export const Container = styled.div`
     width: 460px;
     height: 50px;
     border-radius: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     box-shadow: 2px 4px 5px -3px rgba(0, 0, 0, 0.75);
+  }
+  button:hover {
+    background-color: #021e73;
   }
 `;

@@ -4,6 +4,7 @@ import img from "../../assets/fundolistras.png";
 export const Container = styled.div`
   background-color: #f1f1f1;
   background-image: url(${img});
+
   .content {
     width: 100%;
     max-width: 1200px;
@@ -43,10 +44,13 @@ export const Container = styled.div`
       flex-wrap: wrap;
       width: 100%;
       p {
-        margin: 10px 0;
         font-size: 0.9rem;
+        width: 95%;
       }
       justify-content: space-between;
+      @media (max-width: 1000px) {
+        justify-content: flex-start;
+      }
       @media (max-width: 768px) {
         justify-content: center;
         align-items: center;

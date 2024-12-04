@@ -14,11 +14,14 @@ function App() {
         <Menu />
         <Banner />
         <Home />
-        <About/>
-        <Services/>
-        <Workus/>
-        <Footer/>
-        
+        <About />
+        <Services />
+        <div className="divise">
+
+        </div>
+        <Workus />
+        <Footer />
+
       </div>
     </>
   )
