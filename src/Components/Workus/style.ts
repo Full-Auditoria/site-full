@@ -15,6 +15,9 @@ export const Container = styled.div`
     .containerLeft {
       width: 40%;
       line-height: 25px;
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
     }
     > div {
       width: 50%;
