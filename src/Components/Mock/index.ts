@@ -93,7 +93,7 @@ Conforme o artigo 18 da LGPD, você tem os seguintes direitos:
 - Revogação de consentimento, entre outros.
 
 **Como exercer seus direitos?**
-Entre em contato pelo e-mail: fullcgm.auditoria@gmail.com.
+Entre em contato pelo e-mail:  administrativo@fullauditoria20.com
 
 ## Boas Práticas e Governança
 Implementamos normas reconhecidas, como ISO 27001 e ISO/IEC 27701, que asseguram a conformidade com a LGPD e regulamentações globais.
